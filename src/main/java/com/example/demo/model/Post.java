@@ -7,6 +7,10 @@ public class Post {
     private Integer likes = 0;
     private Date creationDate;
 
+    public Post (String text) {
+        this.text = text;
+        this.creationDate = new Date();
+    }
     public Post (String text, Date creationDate) {
         this.text = text;
         this.creationDate = creationDate;
